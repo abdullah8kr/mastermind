@@ -8,8 +8,55 @@
     <title>mastermind</title>
   </head>
   <body>
-    <h1>Mastermind</h1>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <!-- <input type="text" class="input" id="input1">
+    <input type="text" class="input" id="input2">
+    <input type="text" class="input" id="input3">
+    <input type="text" class="input" id="input4">
+    <button class="compare-btn">Compare </button> -->
+
+    <div class="flex-container">
+      <div class="container">
+        <div class="input-container">
+          <div class="input-colors">
+            <div class="input-color color-wh"></div>
+            <div class="input-color color-bl" ></div>
+            <div class="input-color color-y"></div>
+            <div class="input-color color-g"></div>
+            <div class="input-color color-r"></div>
+            <div class="input-color color-b"></div>
+          </div>
+          <div class="input-selected">
+             <div class="input-color color-y"></div>
+            <div class="input-color color-g"></div>
+            <div class="input-color color-r"></div>
+            <div class="input-color color-b"></div>
+          </div>
+        </div>
+        <div class="moves-container">
+          <div class="move">
+            <div class="move-attempt">
+              1
+            </div>
+            <div class="move-result">
+              <div class="result-peg"></div>
+              <div class="result-peg"></div>
+              <div class="result-peg"></div>
+              <div class="result-peg"></div>
+            </div>
+            <div class="move-selected">
+              <div class="selected-peg"></div>
+              <div class="selected-peg"></div>
+              <div class="selected-peg"></div>
+              <div class="selected-peg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-container"></div>
+      </div>
+    </div>
+  
+
+
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
