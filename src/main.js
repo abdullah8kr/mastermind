@@ -36,12 +36,21 @@
 
 // let playerMove = [];
 // function playerInput() {
-//   const inputMove = [];
+   const inputMove = [];
 //   inputMove.push(document.querySelector('#input1').value);
 //   inputMove.push(document.querySelector('#input2').value);
 //   inputMove.push(document.querySelector('#input3').value);
 //   inputMove.push(document.querySelector('#input4').value);
-//   const valid = inputMove.every( i => i === 'r' || i === 'b' || i === 'g' || i === 'y' || i === 'wh' || i === 'bl')
+
+  const inputColorBtns = document.querySelectorAll('.input-color');
+  inputColorBtns.forEach( button =>{
+    button.addEventListener('click' , () => {
+    inputMove.push(button.dataset.value);
+     if(inputMove.length === 3)
+      console.log('s') ;
+    })  
+  })
+
 
 //   if(valid){
 //     playerMove = [...inputMove]
